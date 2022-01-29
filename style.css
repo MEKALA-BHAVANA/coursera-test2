@@ -1,0 +1,77 @@
+* { box-sizing: border-box; }
+body {background-color: grey;}
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-size: 34px;
+  font-family: monospace;
+}
+
+.container1, .container2, .container3 {
+  position: relative;
+  border: 1px solid black;
+  background-color: #333536;
+  overflow-y: scroll;
+  color: #A8A3A2;
+  margin: 10px;
+  height: 200px;
+}
+p {
+  font-family: monospace;
+  font-size: 18px;
+  padding-top: 31px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+span {
+  padding: 3px;
+  float: right;
+  position: relative;
+  border: 1px solid black;
+  font-family: monospace;
+  font-variant: small-caps;
+  font-weight: bolder;
+  font-size: 25px;
+}
+#Donut {
+  background-color: #E6B7CA;
+  text-align: center;
+  width: 30%;
+  color: black;
+}
+#Sushi {
+  background-color: #D87A59;
+  text-align: center;
+  width: 30%;
+  color: white;
+}
+#Cake {
+  background-color: #E9E3D4;
+  text-align: center;
+  width: 30%;
+  color: black;
+}
+.row {
+  width: 100%;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 31%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px)
+{
+  .col-md-6, .col-md-12 { float: left;}
+  .col-md-6 {width: 46.5%;}
+  .col-md-12 {width: 95%;}
+  #Cake{ width: 15%; }
+}
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 { width: 95%; }
+}
